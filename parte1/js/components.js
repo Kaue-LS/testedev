@@ -8,5 +8,6 @@ function loadComponent(url, targetId) {
         .catch(error => console.error('Erro ao carregar o componente:', error));
 }
 
-loadComponent('../footer.html', 'footer');
 loadComponent('../header.html', 'header');
+loadComponent('../footer.html', 'footer');
+loadComponent('../newsletter.html', 'newsletter');

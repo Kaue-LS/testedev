@@ -1,7 +1,10 @@
 :root {
   /* background and text */
   --color-black: #000000;
-
   --color-black-light: #141414;
+  --color-black-lighter: #00000018;
   --color-white: #fff;
+  --color-white-gray: #f9f9f9;
+  --color-gray-light: #909090;
+  --color-gray-light: #90909018;
 }

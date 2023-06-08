@@ -96,7 +96,9 @@
     height: 100%;
     padding: 10px 0;
     transition: 300ms;
-    border: 1px solid var(--color-black);
+    border-top: 1px solid var(--color-black);
+    border-bottom: 1px solid var(--color-black);
+
     max-height: 300px;
     overflow: hidden;
   }

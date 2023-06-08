@@ -1,0 +1,118 @@
+.newsletter-section {
+  padding: 15px 100px;
+  font-family: Arimo;
+  background: var(--color-white-gray);
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+}
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1170px;
+  gap: 16px;
+}
+.newsletter-section .newsletter-title > h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.newsletter-section .newsletter-title > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.newsletter-section .newsletter-form {
+  flex: 1;
+  width: 100%;
+}
+.newsletter-section .newsletter-form > form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.newsletter-section .newsletter-form > form > label {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid var(--color-black-lighter);
+  position: relative;
+}
+.newsletter-section .newsletter-form > form > label > img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 30px;
+  top: auto;
+  bottom: 12px;
+  opacity: 0.18;
+}
+.newsletter-section .newsletter-form > form > label > input {
+  padding: 15px 78px;
+  color: var(--color-gray);
+}
+.newsletter-section .newsletter-form > form > label > input::placeholder {
+  color: var(--color-gray-light);
+}
+
+.newsletter-section .newsletter-form > form > label > input,
+.newsletter-section .newsletter-form > form > label > input::placeholder {
+  flex: 1;
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat";
+  background: none;
+  outline: none;
+  border: none;
+}
+.newsletter-section .newsletter-form > form > button {
+  padding: 15px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  background: var(--color-black-light);
+  color: var(--color-white);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsletter-container {
+    flex-direction: column;
+  }
+  .newsletter-section .newsletter-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter-section {
+    padding: 15px 20px;
+  }
+  .newsletter-section .newsletter-form > form {
+    flex-direction: column;
+  }
+  .newsletter-section .newsletter-form > form > button {
+    font-size: 18px;
+    padding: 15px;
+  }
+  .newsletter-section .newsletter-form > form > label > input,
+  .newsletter-section .newsletter-form > form > label > input::placeholder {
+    font-size: 16px;
+  }
+  .newsletter-section .newsletter-form > form > label > img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 30px;
+    top: auto;
+    bottom: 12px;
+    opacity: 0.18;
+  }
+}
