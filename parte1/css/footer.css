@@ -1,0 +1,201 @@
+.footer {
+  width: 100%;
+  background-color: var(--color-white);
+  font-family: Arimo;
+}
+
+.footerContainer {
+  padding: 50px 100px;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footerContainer .footer-logo,
+.footerContainer .footer-logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 166px;
+  max-height: 61.66px;
+}
+
+.footerContainer .footer-options {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 200px;
+  gap: 7px;
+}
+
+.footerContainer .footer-options > h3,
+.footerContainer .footer-socialMedia > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-black);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footerContainer .footer-options > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-black);
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.footerContainer .footer-options > a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footerContainer .footer-options.desktop {
+  display: flex;
+}
+
+.footerContainer .footer-options.mobile {
+  display: none;
+}
+
+.footerContainer .footer-socialMedia .footer-linkList {
+  display: flex;
+  gap: 10px;
+}
+
+.footerCopyRights {
+  padding: 10px 100px;
+  background: var(--color-black-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerCopyRights > div {
+  display: flex;
+  gap: 40px;
+}
+
+.footerCopyRights > p {
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer .footer-options.desktop {
+    display: none;
+  }
+
+  .footerContainer .footer-options.mobile {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    transition: 300ms;
+    border: 1px solid var(--color-black);
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .footerContainer .footer-options.mobile.open {
+    max-height: 1000px;
+    transition: 300ms ease-in-out;
+  }
+
+  .footerContainer {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footerContainer .footer-options.mobile .footer-options-menu {
+    display: flex;
+    flex-direction: column;
+    transition: 400ms;
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .footerContainer .footer-options.mobile .footer-options-menu > a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-black);
+    text-decoration: none;
+    transition: 300ms;
+  }
+
+  .footerContainer .footer-options.mobile.closed .footer-options-menu {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    transition: 300ms;
+  }
+
+  .footerContainer .footer-options.mobile .footer-options-button {
+    background: none;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footerContainer .footer-options.mobile .footer-options-button > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .footerContainer
+    .footer-options.mobile.closed
+    .footer-options-button
+    > span
+    > img {
+    transition: 300ms;
+  }
+
+  .footerContainer
+    .footer-options.mobile.open
+    .footer-options-button
+    > span
+    > img {
+    transition: 300ms;
+    transform: rotate(180deg);
+  }
+
+  .footerContainer .footer-options.mobile.open {
+    padding: 20px 0;
+  }
+
+  .footerContainer .footer-socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer .footer-logo,
+  .footerContainer .footer-logo > img {
+    max-width: 126px;
+    max-height: 100%;
+  }
+
+  .footerCopyRights {
+    padding-inline: 20px;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}

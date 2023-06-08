@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background: var(--color-black-ligth);
+  background: var(--color-black-light);
   position: relative;
 }
 
@@ -126,18 +126,83 @@
     display: block;
     max-width: 30px;
   }
+
+  .header-mainContainer
+    .nav-mobile
+    .header-middle-mobile
+    .header-sideBar-mobile {
+    background-color: var(--color-black-light);
+    height: 100vh;
+    width: 100%;
+    max-width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-950px);
+    z-index: 9999;
+  }
+
   .header-mainContainer
     .nav-mobile
     .header-middle-mobile
     .header-sideBar-mobile.closed {
-    position: absolute;
-    left: -400px;
-    top: 0;
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    max-width: 80%;
+    animation: closeSideBar forwards 400ms ease-in-out;
   }
+  .header-mainContainer
+    .nav-mobile
+    .header-middle-mobile
+    .header-sideBar-mobile.open {
+    animation: openSideBar forwards 400ms ease-in-out;
+  }
+
+  .header-mainContainer
+    .nav-mobile
+    .header-sideBar-mobile
+    .closeIcon-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .header-mainContainer
+    .nav-mobile
+    .header-sideBar-mobile
+    .closeIcon-container
+    > img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0px 0 0px auto;
+  }
+  .header-mainContainer
+    .nav-mobile
+    .header-sideBar-mobile
+    .header-options-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .header-mainContainer
+    .nav-mobile
+    .header-sideBar-mobile
+    .header-options-mobile
+    > a {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid var(--color-white);
+  }
+  .header-mainContainer
+    .nav-mobile
+    .header-sideBar-mobile
+    .header-options-mobile
+    > a:last-child {
+    border-top: 1px solid var(--color-white);
+
+    border-bottom: 1px solid var(--color-white);
+  }
+
   .header-mainContainer .nav-mobile .header-search-mobile-container {
     padding: 10px 20px;
     border-top: 0.5px solid var(--color-white);
@@ -216,6 +281,7 @@
   }
 }
 
+/* MOBILE */
 @media screen and (max-width: 768px) {
   .header-upper {
     padding: 16px 20px;
