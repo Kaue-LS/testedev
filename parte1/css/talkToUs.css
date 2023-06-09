@@ -1,5 +1,6 @@
 .talkToUs {
   position: fixed;
+  z-index: 999999;
   right: 20px;
   bottom: 50px;
   transition: 500ms;

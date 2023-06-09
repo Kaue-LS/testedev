@@ -25,3 +25,15 @@ function activeSearch() {
         searchBarContainer.classList.remove("active");
     }
 }
+
+
+window.addEventListener('scroll', function () {
+    var header = document.querySelector('.header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 200) {
+        header.classList.add('visible'); // Adiciona a classe "visible" ao cabeçalho
+    } else {
+        header.classList.remove('visible'); // Remove a classe "visible" do cabeçalho
+    }
+});

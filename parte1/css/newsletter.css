@@ -53,6 +53,8 @@
 }
 .newsletter-section .newsletter-form > form > label > input {
   padding: 15px 78px;
+  cursor: pointer;
+
   color: var(--color-gray);
 }
 .newsletter-section .newsletter-form > form > label > input::placeholder {
@@ -73,6 +75,7 @@
 }
 .newsletter-section .newsletter-form > form > button {
   padding: 15px 12px;
+  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;

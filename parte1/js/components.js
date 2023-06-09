@@ -9,6 +9,9 @@ function loadComponent(url, targetId) {
 }
 
 loadComponent('../header.html', 'header');
-loadComponent('../footer.html', 'footer');
+loadComponent("../banner.html", "mainBanner")
+loadComponent("../video.html", "video")
+loadComponent("../collection.html", "collection")
 loadComponent('../newsletter.html', 'newsletter');
+loadComponent('../footer.html', 'footer');
 loadComponent("../talkToUs.html", "talkToUs")

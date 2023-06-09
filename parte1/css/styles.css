@@ -4,6 +4,9 @@
 @import "animations.css";
 
 @import "header.css";
+@import "banner.css";
+@import "video.css";
+@import "collection.css";
 @import "talkToUs.css";
 @import "newsletter.css";
 @import "footer.css";
@@ -15,5 +18,4 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: gray;
 }
