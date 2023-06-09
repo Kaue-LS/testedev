@@ -1,0 +1,54 @@
+.talkToUs {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  transition: 500ms;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 52px;
+  max-height: 52px;
+  border-radius: 30px;
+}
+.talkToUs.active {
+  padding: 15px 0px 15px 30px;
+  background: var(--color-black);
+  gap: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 265px;
+  max-height: 52px;
+}
+
+.talkToUs.active::after {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2.78467' width='17' height='17' transform='rotate(9.42717 2.78467 0)' fill='black'/%3E%3C/svg%3E%0A")
+    no-repeat 100%;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  bottom: -19px;
+  right: 5px;
+  position: relative;
+}
+.talkToUs.active > p {
+  opacity: 1;
+  margin: 0;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.35em;
+}
+.talkToUs > p {
+  opacity: 0;
+  transition: 500ms;
+  display: block;
+  white-space: nowrap;
+  font-family: "Arimo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--color-white);
+  text-transform: uppercase;
+}

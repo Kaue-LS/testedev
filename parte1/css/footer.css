@@ -25,7 +25,6 @@
   flex-direction: column;
   flex: 1;
   margin-left: 200px;
-  gap: 7px;
 }
 
 .footerContainer .footer-options > h3,
@@ -43,7 +42,7 @@
   line-height: 16px;
   color: var(--color-black);
   text-decoration: none;
-  transition: 300ms;
+  margin-bottom: 7px;
 }
 
 .footerContainer .footer-options > a:hover {
@@ -117,6 +116,16 @@
     gap: 20px;
   }
 
+  .footerContainer .footer-options.mobile.open .footer-options-menu {
+    display: flex;
+    max-height: 500px;
+    animation: open-dropdown-animation 0.5s ease forwards;
+  }
+  .footerContainer .footer-options.mobile.close .footer-options-menu {
+    max-height: 0px;
+    animation: close-dropdown-animation 500s ease forwards;
+  }
+
   .footerContainer .footer-options.mobile .footer-options-menu {
     display: flex;
     flex-direction: column;
@@ -137,7 +146,6 @@
   .footerContainer .footer-options.mobile.closed .footer-options-menu {
     height: 0;
     overflow: hidden;
-    display: none;
     transition: 300ms;
   }
 
@@ -199,5 +207,16 @@
     padding-inline: 20px;
     flex-direction: column-reverse;
     gap: 10px;
+  }
+  .footerContainer .footer-options.mobile .footer-options-menu {
+    gap: 18px;
+  }
+  .footerContainer .footer-options.mobile .footer-options-menu > a {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+  .footerContainer .footer-options > h3,
+  .footerContainer .footer-socialMedia > h3 {
+    font-size: 20px;
   }
 }

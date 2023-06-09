@@ -4,7 +4,8 @@
 @import "animations.css";
 
 @import "header.css";
-@import "./newsletter.css";
+@import "talkToUs.css";
+@import "newsletter.css";
 @import "footer.css";
 
 * {

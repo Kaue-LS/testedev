@@ -1,7 +1,5 @@
 <head>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer type="text/javascript"></script>
-
 </head>
 
 <body>
@@ -21,14 +19,19 @@
                     <a href="" target="_blank" rel="noopener noreferrer">BORN IN CHAOS</a>
                 </div>
                 <div class="header-search-menu">
-                    <label class="header-search">
+                    <label onclick="activeSearch()" id="SearchBarContainer" class="header-search">
                         <button>
                             <img src="assets/svg/search.svg" alt="">
                         </button>
-                        <input type="text" placeholder="BUSCAR PRODUTOS..." />
+                        <input id="SearchBar" type="text" placeholder="BUSCAR PRODUTOS..." />
+                        <span>
+                            <img src="assets/svg/closeSearchIcon.svg" alt="">
+                        </span>
                     </label>
                     <div class="header-menu">
-                        <a class="user-button" href="" rel="noopener noreferrer">
+                        <a onmouseover="changeIcon('../assets/svg/iconUserActive.svg')"
+                            onmouseout="changeIcon('../assets/svg/user.svg')" class="user-button" href=""
+                            rel="noopener noreferrer">
                             <img src="assets/svg/user.svg" alt="" />
                         </a>
                         <button class="cart-button">

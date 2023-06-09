@@ -11,3 +11,4 @@ function loadComponent(url, targetId) {
 loadComponent('../header.html', 'header');
 loadComponent('../footer.html', 'footer');
 loadComponent('../newsletter.html', 'newsletter');
+loadComponent("../talkToUs.html", "talkToUs")
