@@ -1,0 +1,61 @@
+<body>
+    <section id="cartContainer" class="cart">
+        <div class="cart-header">
+            <img src="assets/svg/bag-cart.svg" alt="" />
+            <h3>Sua Sacola (99)</h3>
+            <span onclick="closeCart()">
+                <img src="assets/svg/cart-close.svg" alt="X" />
+            </span>
+        </div>
+        <div class="cart-products">
+            <div class="cartList">
+                <div class="cartList-product">
+                    <div class="image">
+                        <img src="assets/image/productImage.png" alt="" />
+                    </div>
+                    <div class="details">
+                        <h3>Lorem ipsum</h3>
+                        <p>Quantidade: 01</p>
+                        <div class="price-trash">
+                            <span>R$1.598,00</span>
+                            <span class="trash-icon"
+                                onmouseover="changeIcon('../assets/svg/trash-icon-active.svg','.trash-icon')"
+                                onmouseout="changeIcon('../assets/svg/trash-icon.svg','.trash-icon')">
+                                <img src="assets/svg/trash-icon.svg" alt="remove" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartList-product">
+                    <div class="image">
+                        <img src="assets/image/productImage.png" alt="" />
+                    </div>
+                    <div class="details">
+                        <h3>Lorem ipsum</h3>
+                        <p>Quantidade: 01</p>
+                        <div class="price-trash">
+                            <span>R$1.598,00</span>
+                            <span class="trash-icon-2"
+                                onmouseover="changeIcon('../assets/svg/trash-icon-active.svg','.trash-icon-2')"
+                                onmouseout="changeIcon('../assets/svg/trash-icon.svg','.trash-icon-2')">
+                                <img src="assets/svg/trash-icon.svg" alt="remove" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="class-total">
+                <label>
+                    Total a pagar:
+                </label>
+                <span>R$ 580,00</span>
+            </div>
+            <div class="buttons">
+                <button class="buy">Comprar</button>
+                <button class="keep-buying">Continuar comprando</button>
+            </div>
+        </div>
+    </section>
+</body>

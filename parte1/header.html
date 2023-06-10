@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-
 <body>
     <header class="header">
         <div class="header-upper">
@@ -29,17 +25,17 @@
                         </span>
                     </label>
                     <div class="header-menu">
-                        <a onmouseover="changeIcon('../assets/svg/iconUserActive.svg')"
-                            onmouseout="changeIcon('../assets/svg/user.svg')" class="user-button" href=""
+                        <a onmouseover="changeIcon('../assets/svg/iconUserActive.svg','.user-button')"
+                            onmouseout="changeIcon('../assets/svg/user.svg','.user-button')" class="user-button" href=""
                             rel="noopener noreferrer">
                             <img src="assets/svg/user.svg" alt="" />
                         </a>
-                        <button class="cart-button">
-                            <img src="assets/svg/shopping-bag.svg" alt="" />
+                        <button onclick="openCart()" class="cart-button">
+                            <img src="assets/svg/shopping-bag.svg" alt="cart" />
                         </button>
-                        <a class="ninetyNine-icon" href="" rel="noopener noreferrer">
-                            <img src="assets/svg/Frame 181.svg" alt="" />
-                        </a>
+                        <button onclick="openCart()" class="ninetyNine-icon">
+                            <img src="assets/svg/Frame 181.svg" alt="99" />
+                        </button>
                     </div>
 
                 </div>

@@ -80,9 +80,14 @@
   font-size: 14px;
   line-height: 17px;
   border: none;
-  background: var(--color-black-light);
+  background: var(--color-black);
   color: var(--color-white);
   border-radius: 5px;
+  transform: 500ms;
+}
+
+.newsletter-section .newsletter-form > form > button:hover {
+  background: var(--color-black-light);
 }
 
 @media screen and (max-width: 1024px) {

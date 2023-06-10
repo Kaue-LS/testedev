@@ -9,6 +9,7 @@ function loadComponent(url, targetId) {
 }
 
 loadComponent('../header.html', 'header');
+loadComponent('../cartList.html', 'cart');
 loadComponent("../banner.html", "mainBanner");
 loadComponent("../productList.html", "product-list");
 loadComponent("../video.html", "video");

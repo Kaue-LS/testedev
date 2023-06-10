@@ -11,8 +11,8 @@ function closeMenuMobile() {
 
 
 
-function changeIcon(url) {
-    const iconUser = document.querySelector(".user-button")
+function changeIcon(url, classes) {
+    const iconUser = document.querySelector(classes)
     const image = iconUser.querySelector('img')
     image.src = url
 }
@@ -37,3 +37,12 @@ window.addEventListener('scroll', function () {
         header.classList.remove('visible'); // Remove a classe "visible" do cabeçalho
     }
 });
+
+function openCart() {
+    const cart = document.getElementById("cart")
+    cart.classList.add("cart-open")
+}
+function closeCart() {
+    const cart = document.getElementById("cart")
+    cart.classList.remove("cart-open")
+}
