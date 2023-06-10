@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": false,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": false,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": false,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": false,
+    "price": 1598
+  },
+  {
+    "name": "Lorem ipsum",
+    "imageUrl": "assets/image/productImage.png",
+    "oldPrice": 1598,
+    "available": true,
+    "price": 1598
+  }
+]

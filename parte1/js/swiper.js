@@ -1,20 +1,73 @@
 window.addEventListener('load', function () {
-    new Swiper(".swiper-container", {
-        // Defina as opções do Swiper aqui
-        slidesPerView: 1, // Define o número de slides visíveis por vez (ajuste conforme necessário)
-        spaceBetween: 20, // Define o espaçamento entre os slides (ajuste conforme necessário)
-        loop: true, // Ativa o loop do slider
+    new Swiper("#mainBannerContainer.swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
         autoplay: {
-            delay: 3000, // Defina o intervalo de tempo entre as transições em milissegundos
-            disableOnInteraction: false // Permite que o autoplay continue mesmo quando o usuário interage com o Swiper
-        },
-        navigation: {
-            nextEl: ".swiper-button-next", // Elemento para o botão "Próximo"
-            prevEl: ".swiper-button-prev", // Elemento para o botão "Anterior"
-        },
-        pagination: {
-            el: ".swiper-pagination", // Elemento para a paginação
-            clickable: true, // Permite a interação com a paginação
+            delay: 3000,
+            disableOnInteraction: false
         },
     });
+})
+window.addEventListener('load', function () {
+    new Swiper("#product-list-1-container-desktop", {
+        slidesPerView: 5,
+        spaceBetween: 25,
+        loop: true,
+        navigation: {
+            nextEl: "#product-list-1.swiper-button-next",
+            prevEl: "#product-list-1.swiper-button-prev",
+        },
+    });
+    new Swiper("#product-list-2-container-desktop", {
+        slidesPerView: 5,
+        spaceBetween: 25,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+});
+
+window.addEventListener('load', function () {
+    function handleWindowSizeChange() {
+        const windowWidth = window.innerWidth;
+        const product1 = document.querySelector("#product-list-1-container-desktop");
+        const product2 = document.querySelector("#product-list-2-container-desktop");
+
+        if (windowWidth <= 1024) {
+            if (product1 && product2) {
+                product1.id = "product-list-1-container-mobile";
+                product2.id = "product-list-2-container-mobile";
+                new Swiper("#product-list-1-container-mobile", {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                    loop: true,
+                    navigation: {
+                        nextEl: "#product-list-1.swiper-button-next",
+                        prevEl: "#product-list-1.swiper-button-prev",
+                    },
+                });
+                new Swiper("#product-list-2-container-mobile", {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                    loop: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            }
+        } else {
+            if (product1 && product2) {
+                product1.id = "product-list-1-container-desktop";
+                product2.id = "product-list-2-container-desktop";
+            }
+        }
+    }
+
+    window.addEventListener("resize", handleWindowSizeChange);
+    handleWindowSizeChange();
 })
